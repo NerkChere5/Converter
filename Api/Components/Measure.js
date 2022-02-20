@@ -1,5 +1,5 @@
 export class Measure {
-  _length = [
+  length = [
     'millimeter',
     'millimeter',
     'centimeter',
@@ -12,7 +12,7 @@ export class Measure {
     'mile',
     'nautical mile',
   ]
-  _volume = [
+  volume = [
     'cubic centimeter',
     'cubic detsimeter',
     'cubic inch',
@@ -24,7 +24,7 @@ export class Measure {
     'liter',
     'milliliter',
   ]
-  _mass = [
+  mass = [
     'centner',
     'gram',
     'gran',
@@ -36,7 +36,7 @@ export class Measure {
     'stone',
     'tons',
   ]
-  _area = [
+  area = [
     'acre',
     'are',
     'hectare',
@@ -54,10 +54,10 @@ export class Measure {
     let lists = body.querySelectorAll('select');
     
     for (let i = 0; i < lists.length; i++) {
-      for (let k = 0; k < this._[type].length; k++) {
+      for (let k = 0; k < this.[type].length; k++) {
         let option = document.createElement('option');
         
-        option.textContent = this._[type][k];
+        option.textContent = this.[type][k];
         
         lists[i].append(option);
       }
