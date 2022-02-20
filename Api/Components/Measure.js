@@ -53,8 +53,8 @@ export class Measure {
   static _distibutor(body, type) {
     let lists = body.querySelectorAll('select');
     
-    for (let i = 0; i < 2; i++) {
-      for (let k = 0; k < 10; k++) {
+    for (let i = 0; i < lists.length; i++) {
+      for (let k = 0; k < this._[type].length; k++) {
         let option = document.createElement('option');
         
         option.textContent = this._[type][k];
