@@ -1,10 +1,16 @@
 export class Measure {
-  length = [
-    'millimeter',
+  static length = [
+    {
+      name: 'millimeter',
+      measure: 0.001,
+    },
     'millimeter',
     'centimeter',
     'decimeter',
-    'meter',
+    {
+      name: 'meter',
+      measure: 1,
+    },
     'kilometer',
     'inch',
     'foot',
@@ -12,7 +18,7 @@ export class Measure {
     'mile',
     'nautical mile',
   ];
-  volume = [
+  static volume = [
     'cubic centimeter',
     'cubic detsimeter',
     'cubic inch',
@@ -24,7 +30,7 @@ export class Measure {
     'liter',
     'milliliter',
   ];
-  mass = [
+  static mass = [
     'centner',
     'gram',
     'gran',
@@ -36,7 +42,7 @@ export class Measure {
     'stone',
     'tons',
   ];
-  area = [
+  static area = [
     'acre',
     'are',
     'hectare',
@@ -56,7 +62,6 @@ export class Measure {
     for (let i = 0; i < lists.length; i++) {
       for (let k = 0; k < this[type].length; k++) {
         let option = document.createElement('option');
-        
         option.textContent = this[type][k];
         
         lists[i].append(option);

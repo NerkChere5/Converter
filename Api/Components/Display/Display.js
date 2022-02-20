@@ -1,5 +1,5 @@
 import {Component} from '../Component.js';
-import {Measure} from '../Measure.js'
+import {Measure} from '../../../Units/Measure/Measure.js'
 
 
 class Display extends Component {
