@@ -8,6 +8,16 @@ class Display extends Component {
   _type = null;
   _value_to = null;
   
+  
+  
+  
+  set visible(value) {
+    this.setAttribute('visible', value);
+  }
+  
+  
+  
+  
   async _build() {
     await super._build();
     
@@ -46,6 +56,5 @@ class Display extends Component {
     }
   }
 }
-
 
 Display.init(import.meta.url);
