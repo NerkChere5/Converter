@@ -6,7 +6,7 @@ class Display extends Component {
   async _build() {
     await super._build();
     
-    Measure.init(this.body, 'length')
+    Measure.init(this._body, 'length')
   }
   
 }
