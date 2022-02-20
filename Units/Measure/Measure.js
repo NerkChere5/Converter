@@ -1,16 +1,9 @@
 export class Measure {
   static length = [
-    {
-      name: 'millimeter',
-      measure: 0.001,
-    },
     'millimeter',
     'centimeter',
     'decimeter',
-    {
-      name: 'meter',
-      measure: 1,
-    },
+    'meter',
     'kilometer',
     'inch',
     'foot',
