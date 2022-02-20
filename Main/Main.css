@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+
+x-converter {
+  display: block;
+  height: 99vh;
+  width: 99vw;
+  border: 1px solid #000;
+  overflow: hidden;
+}
