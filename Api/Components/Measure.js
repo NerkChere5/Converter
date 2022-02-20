@@ -11,7 +11,7 @@ export class Measure {
     'yard',
     'mile',
     'nautical mile',
-  ]
+  ];
   volume = [
     'cubic centimeter',
     'cubic detsimeter',
@@ -23,7 +23,7 @@ export class Measure {
     'cubic yard',
     'liter',
     'milliliter',
-  ]
+  ];
   mass = [
     'centner',
     'gram',
@@ -35,7 +35,7 @@ export class Measure {
     'short ton',
     'stone',
     'tons',
-  ]
+  ];
   area = [
     'acre',
     'are',
@@ -47,17 +47,17 @@ export class Measure {
     'square kilometre',
     'square millimeter',
     'square yard',
-  ]
+  ];
   
   
   static _distibutor(body, type) {
     let lists = body.querySelectorAll('select');
     
     for (let i = 0; i < lists.length; i++) {
-      for (let k = 0; k < this.[type].length; k++) {
+      for (let k = 0; k < this[type].length; k++) {
         let option = document.createElement('option');
         
-        option.textContent = this.[type][k];
+        option.textContent = this[type][k];
         
         lists[i].append(option);
       }
