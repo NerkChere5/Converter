@@ -1,19 +1,5 @@
-:host {
-  position: absolute;
-  z-index: 1;
-}
-
-.list_menu {
-  padding: 5px;
-  background: #000d;
-  height: 97vh;
-  width: 30vw;
-}
-
-.flod_menu {
-  background: #000d;
-  height: 97vh;
-  width: 3vw;
+x_body {
+  display: grid;
 }
 
 .list_items::slotted(*) {
@@ -33,18 +19,3 @@
 .list_items::slotted(*:active) {
   border: 1px solid #aaa;
 }
-
-.button {
-  text-align: right;
-  cursor: pointer;
-  color: #fff;
-  font-weight: 600;
-  font-size: 24px;
-  margin: 5px;
-  user-select: none;
-}
-
-.button:hover {
-  color: #ddd;
-}
-
