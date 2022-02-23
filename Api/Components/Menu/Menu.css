@@ -5,17 +5,17 @@ x_body {
 }
 
 .list_items::slotted(*) {
-  cursor: pointer;
   background: #fffd;
   border: 1px solid #fffd;
+  cursor: pointer;
   margin: 5px;
   padding: 5px;
   user-select: none;
 }
 
 .list_items::slotted(*:hover) {
-  cursor: pointer;
   background: #aaad;
+  cursor: pointer;
 }
 
 .list_items::slotted(*:active) {

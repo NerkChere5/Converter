@@ -25,15 +25,23 @@ class Display extends Component {
     this._value_to = this._body.querySelector('.value_to');
     
     this._distibutor();
+    this._convertor();
     
-    this._body.addEventListener('keyup', this._on__keyup.bind(this));
+    this._body.addEventListener('keyup', this._on__keyup__click.bind(this));
+    this._body.addEventListener('click', this._on__keyup__click.bind(this));
   }
   
-  _on__keyup(event) {
-    if (!event.target.classList.contains('value_from')) return;
+  _on__keyup__click(event) {
+    if (!event.target.classList.contains('conv')) return;
     
-    let value = event.target.value;
+    this._convertor();
+  }
+  
+  _convertor() {
+    let value = this._body.querySelector('input').value;
+    
     let measure_from = this._body.querySelector('.measure_from').value;
+    
     let measure_to = this._body.querySelector('.measure_to').value;
     
     this._result_convert = Converter.convert(this._type, measure_from, measure_to, value);
