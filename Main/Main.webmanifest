@@ -1,5 +1,5 @@
 {
-  "background_color": "#484",
+  "background_color": "#faa",
   "display": "standalone",
   "icons": [{
     "sizes": "512x512",
@@ -8,5 +8,5 @@
   "name": "Converter",
   "orientation": "portrait",
   "start_url": "../",
-  "theme_color": "#484"
+  "theme_color": "#faa"
 }

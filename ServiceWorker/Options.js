@@ -1,3 +1,3 @@
 let options = {
-  cache_name: 'Converter_1.0.0',
+  cache_name: 'Converter_1.0.2',
 };

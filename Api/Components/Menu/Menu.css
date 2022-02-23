@@ -1,5 +1,7 @@
 x_body {
   display: grid;
+  grid-auto-flow: column;
+  justify-items: center;
 }
 
 .list_items::slotted(*) {
